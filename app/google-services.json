@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "419163219390",
+    "project_id": "petbuddy-68ca4",
+    "storage_bucket": "petbuddy-68ca4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419163219390:android:f9058f8e150796018f45ef",
+        "android_client_info": {
+          "package_name": "com.example.my_pet_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbW_cof9-iLIlIqPyuxvCIN6CTmELwik8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yellow_grad"
+    tools:context=".SignUp">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+
+        app:lottie_rawRes="@raw/signup"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="-100dp"
+
+        app:lottie_loop="true"
+        />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_marginLeft="45dp"
+            android:layout_height="500dp"
+            android:elevation="30dp"
+            android:layout_marginTop="160dp"
+
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="#ECA152"
+            >
+            <TextView
+                android:id="@+id/startjourney"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aladin"
+                android:gravity="center"
+                android:textSize="20sp"
+
+                android:layout_marginLeft="59dp"
+                android:textColor="#FFF"
+                android:text="Start Your Journey" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname"
+            android:layout_width="260dp"
+            android:layout_marginLeft="25dp"
+
+
+            app:boxBackgroundColor="#FFF"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomStart="5dp"
+
+
+            android:layout_marginTop="65dp"
+            android:hint="Full Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            android:layout_marginTop="124dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxBackgroundColor="#FFF"
+            android:hint="Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_house_24"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:layout_marginTop="180dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxBackgroundColor="#FFF"
+                android:hint="Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phonenum"
+                android:layout_marginTop="237dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxBackgroundColor="#FFF"
+                android:hint="Phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phonenumEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_phone_24"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_marginTop="297dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxBackgroundColor="#FFF"
+                app:passwordToggleEnabled="true"
+
+                app:passwordToggleTint="@color/yellow"
+                android:hint="Set Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:minHeight="48dp"
+
+
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_btn"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="371dp"
+                android:background="#EA7A02"
+                android:text="Sign Up"
+                android:textColor="#263238" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signin_btn"
+        android:layout_width="260dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:text="Already have an Account? Sign in"
+        android:textColor="#FFF"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginTop="435dp"
+        android:contentDescription="Sign in with an existing account"
+        />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
+
+
