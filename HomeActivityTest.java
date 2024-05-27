@@ -48,14 +48,14 @@ public class HomeActivityTest {
     public void testImageButton1Clicked() {
         onView(withId(R.id.image_btn1))
                 .perform(click());
-        // Optionally add an assertion to verify the next activity is displayed
+        Intents.intended(IntentMatchers.hasComponent(Dog.class.getName()));
     }
 
     @Test
     public void testImageButton2Clicked() {
         onView(withId(R.id.image_btn2))
                 .perform(click());
-        // Optionally add an assertion to verify the next activity is displayed
+        Intents.intended(IntentMatchers.hasComponent(Cat.class.getName()));
     }
 
     @Test
