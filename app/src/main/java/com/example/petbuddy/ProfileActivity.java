@@ -17,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 
-
 public class ProfileActivity extends DrawerBase {
 
     DatabaseReference databaseReference;
@@ -44,7 +43,6 @@ public class ProfileActivity extends DrawerBase {
         phoneTextView = findViewById(R.id.phonenumEditText);
         passwordTextView = findViewById(R.id.passwordEditText);
         deleteBtn = findViewById(R.id.deleteBtn);
-        idPhone = phoneTextView.getText().toString();
 
         showUserData();
 
@@ -117,13 +115,13 @@ public class ProfileActivity extends DrawerBase {
     }
 
     public void showUserData() {
-        Intent intent = getIntent();
+        Intent intent=getIntent();
 
-        String nameUser = intent.getStringExtra("name");
-        String passUser = intent.getStringExtra("password");
-        String phoneUser = intent.getStringExtra("phone");
-        String emailUser = intent.getStringExtra("email");
-        String userNameUser = intent.getStringExtra("username");
+        String nameUser= intent.getStringExtra("name");
+        String passUser= intent.getStringExtra("password");
+        String phoneUser= intent.getStringExtra("phone");
+        String emailUser= intent.getStringExtra("email");
+        String userNameUser= intent.getStringExtra("username");
 
         fullNameTextView.setText(nameUser);
         usernameTextView.setText(userNameUser);
